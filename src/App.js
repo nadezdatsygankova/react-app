@@ -8,7 +8,8 @@ function App() {
     <main>
       <Button size="lg" style={{color: "green"}} onClick={() => console.log("Logging in...")}>
         <FcGoogle />
-        Log in with Google
+
+        Log in with Google ...
       </Button>
 
     </main>
