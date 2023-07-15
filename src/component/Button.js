@@ -1,12 +1,11 @@
 
 
-function Button({ children, size, ...rest }) {
+function Button({ children, size, className, ...rest }) {
 
   return (
     <div>
-      <button  {...rest} className = {(size==='lg')?'button-large':'button-small'}>
+      <button  {...rest} className = {`${className} ${(size==='lg')?'button-large':'button-small'}`}>
         {children}
-        
       </button>
     </div>
   );
