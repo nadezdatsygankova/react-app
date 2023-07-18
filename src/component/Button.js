@@ -1,9 +1,13 @@
 //library for sum classes
 import classnames from "classnames"
 
-function Button({ children, size, className, ...rest }) {
+function Button({ children, size, className,variant, ...rest }) {
   let sizeClass = size ? `button-${size}`: ""
-  const allClasses = classnames(sizeClass, className)
+  let variantClass = variant ? `button-${variant}`:"";
+
+  const allClasses = classnames(sizeClass, className,variantClass)
+
+
 
   return (
     <div>
