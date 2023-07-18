@@ -2,7 +2,9 @@
 import classnames from "classnames"
 
 function Button({ children, size, className,variant, ...rest }) {
-  let sizeClass = size ? `button-${size}`: ""
+  let sizeClass = size ? `button-${size}`: "";
+  // another version
+  // let sizeClass = size && `button-${size}`
   let variantClass = variant ? `button-${variant}`:"";
 
   const allClasses = classnames(sizeClass, className,variantClass)
